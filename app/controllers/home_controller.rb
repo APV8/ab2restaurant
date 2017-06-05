@@ -4,10 +4,9 @@ class HomeController < ApplicationController
 
 
   def home
-  	@home = Home.all
   end
 
   def contact
   end
-  
+
 end
