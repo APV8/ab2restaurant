@@ -3,6 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> AB2 Restaurant </title>
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -13,8 +15,8 @@
       <div class="top-bar-left">
         <ul class="menu">
           <li class="menu-text">Home</li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><%= link_to 'Sign up', new_user_path %></li>
+          <li><%= link_to 'Contact', home_contact_path %></li>
         </ul>
       </div>
     </div>
@@ -26,7 +28,14 @@
         <h2 class="subheader">Do you want to join our community?</h2>
       </div>
     </div>
-    
+   
+   <div class="row column text-center">
+    <p>Click on <b><%= link_to 'New User', new_user_path %></b> to register for our weekly newsletter!</p>
+   </div> 
+
+
+
+
     <!-- We can now combine rows and columns when there's only one column in that row -->
     <div class="row medium-8 large-7 columns">
       <div class="blog-post">
