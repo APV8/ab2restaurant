@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-   layout 'blog'
+   layout 'blog', only: [:home]
 
 
 
